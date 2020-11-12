@@ -12,7 +12,6 @@
 (define (good-enough? guess x diff)
   (< (abs (- guess (improve guess x))) diff))
 
-
 (define (sqrt-iter guess x diff)
   (if (good-enough? guess x diff)
       guess
